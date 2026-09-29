@@ -5,7 +5,7 @@ Sistema ATS automatizado, desacoplado y self-hosted que ingiere vacantes multiti
 
 ## 2. Arquitectura
 ```text
-[ Fuentes: GetOnBrd, DonWeb, Compromiso, Arauco ]
+[ Fuentes: GetOnBrd, DonWeb, Compromiso, Otros ]
                          │
                          ▼
              [ Adaptadores Canónicos ]
@@ -60,6 +60,6 @@ Sistema ATS automatizado, desacoplado y self-hosted que ingiere vacantes multiti
 * **Pre-Filtrado Determinístico: * **Inferencia Semántica:** Groq API con sanitización de payload y throttling; persistencia idempotente.
 
 ### En Plan (Roadmap & Fases Futuras)
-* **Adaptadores Pendientes:** Extractor e integrador para SAP SuccessFactors (Arauco Jobs).
+* **Adaptadores Pendientes:** Extractor e integrador para SAP SuccessFactors.
 * **Fallback de inferencia:** conmutación automática de Groq a Gemini Flash ante errores 429/500. Conexión del nodo `HTTP Request` para Groq / Gemini Flash con JSON Schema estricto.
 * **Interfaz & Notificaciones:** Bot interactivo de Telegram con botones de postulación (`[🎯 Postular]`, `[💾 Guardar]`) y Webhook de callback para marcar `applied = true` en PostgreSQL.
